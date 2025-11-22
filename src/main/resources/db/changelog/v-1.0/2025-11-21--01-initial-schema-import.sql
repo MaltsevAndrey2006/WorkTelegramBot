@@ -11,15 +11,15 @@ CREATE TYPE work_format AS ENUM ('office', 'remote', 'hybrid');
 CREATE TABLE programmers
 (
     id           SERIAL PRIMARY KEY,
-    first_name   VARCHAR(40)    NOT NULL,
-    last_name    VARCHAR(40)    NOT NULL,
-    surname      VARCHAR(40)    NOT NULL,
-    age          INTEGER        NOT NULL CHECK (age >= 16),
-    technologies TEXT           NOT NULL,
-    experience   age_experience NOT NULL,
+    first_name   VARCHAR(40) NOT NULL,
+    last_name    VARCHAR(40) NOT NULL,
+    surname      VARCHAR(40) NOT NULL,
+    age          INTEGER     NOT NULL CHECK (age >= 16),
+    technologies TEXT        NOT NULL,
+    experience   VARCHAR(40) NOT NULL,
     about_myself TEXT,
     contacts     TEXT,
-    telegram     TEXT           NOT NULL,
+    telegram     TEXT        NOT NULL,
     chat_id      TEXT
 );
 
