@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -39,6 +40,7 @@ public class Vacancy {
 
     private String workFormat;
 
+    @CreationTimestamp
     private LocalDate publicationDate;
 
     private String city;
