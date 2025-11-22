@@ -1,0 +1,20 @@
+spring:
+    application:
+        name: WorkTelegramBot
+    datasource:
+      url: jdbc:postgresql://localhost:9000/dbForWorkTgBot
+      username: ${dbUserName}
+      password: ${dbPassword}
+    liquibase:
+      change-log: classpath:db/changelog/migrations.xml
+    jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
+
+
+
+
+
