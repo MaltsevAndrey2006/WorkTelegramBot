@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ProgrammerRepository extends JpaRepository<Programmer, Long> {
-
+    Programmer findByChatId(String chatId);
 }
