@@ -18,11 +18,17 @@ import java.util.HashSet;
 public class ProgrammerRegistrationService {
 
     private HashSet<Long> waitingForName = new HashSet<>();
+
     private HashSet<Long> waitingForTechnologies = new HashSet<>();
+
     private HashSet<Long> waitingForRestInformation = new HashSet<>();
+
     private final ProgrammerMapper programmerMapper;
+
     private HashMap<Long, Programmer> mapOfProgrammersInRegistration = new HashMap<>();
+
     private HashMap<Long, HashSet<TechStack>> techStacksOfProgrammers = new HashMap<>();
+
     private final ProgrammerRepository programmerRepository;
 
     public void beginOfRegistration(Long chatId) {
